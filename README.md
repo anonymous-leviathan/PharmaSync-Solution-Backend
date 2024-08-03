@@ -19,7 +19,7 @@ PharmaSync ERP is a comprehensive pharmacy management system designed to streaml
 - **Backend**: Java, Spring Boot
 - **Database**: PostgreSQL
 - **ORM**: Hibernate
-- **Frontend**: [Your Frontend Technology] (if applicable)
+- **Frontend**: Pending...
 
 ## Installation
 
