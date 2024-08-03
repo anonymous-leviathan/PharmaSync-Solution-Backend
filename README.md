@@ -1,5 +1,7 @@
 # PharmaSync ERP
 
+![portrait-female-pharmacist-working-drugstore](https://github.com/user-attachments/assets/e76376d6-c404-4e3e-b2c2-ea548b9ec61e)
+
 ## Description
 
 PharmaSync ERP is a comprehensive pharmacy management system designed to streamline operations in the healthcare industry. It aims to help pharmacies manage their inventory, track medication details, and ensure compliance with regulations while promoting the accessibility of healthcare products globally.
