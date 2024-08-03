@@ -1,6 +1,6 @@
 # PharmaSync ERP
 
-![portrait-female-pharmacist-working-drugstore](https://github.com/user-attachments/assets/e76376d6-c404-4e3e-b2c2-ea548b9ec61e)
+![portrait-woman-working-pharmaceutical-industry](https://github.com/user-attachments/assets/4b89d947-ef6c-4301-81ca-e67935edcaf1)
 
 ## Description
 
