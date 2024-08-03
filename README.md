@@ -1,4 +1,4 @@
-# PharmaSync ERP
+# PharmaSync Solution
 
 ![portrait-woman-working-pharmaceutical-industry](https://github.com/user-attachments/assets/4b89d947-ef6c-4301-81ca-e67935edcaf1)
 
