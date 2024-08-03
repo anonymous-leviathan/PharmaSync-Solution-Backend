@@ -27,7 +27,7 @@ PharmaSync ERP is a comprehensive pharmacy management system designed to streaml
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mGunawardhana/PharmaSync-ERP-Backend.git
+   git clone https://github.com/mGunawardhana/PharmaSync-Solution-Backend.git
    cd pharmasync-erp
 
 
