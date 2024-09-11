@@ -99,6 +99,13 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+			<!-- Add the additional spring-boot-maven-plugin if necessary -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
 		</plugins>
 	</build>
 
