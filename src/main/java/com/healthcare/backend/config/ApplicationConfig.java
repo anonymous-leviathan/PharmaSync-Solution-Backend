@@ -1,7 +1,7 @@
 package com.healthcare.backend.config;
 
 
-import com.healthcare.backend.repository.UserRepository;
+import com.healthcare.backend.authentication_authorization.repository.UserRepository;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;

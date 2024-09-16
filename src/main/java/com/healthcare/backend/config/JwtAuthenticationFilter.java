@@ -1,6 +1,6 @@
 package com.healthcare.backend.config;
 
-import com.healthcare.backend.service.impl.JwtServiceImpl;
+import com.healthcare.backend.authentication_authorization.service.impl.JwtServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
