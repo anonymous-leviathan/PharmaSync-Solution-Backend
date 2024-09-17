@@ -25,7 +25,9 @@ public class SqlQuery {
      * This holds all the insert queries
      */
     public static class InsertQuery {
-        public static final String INSERT_TPS_BANK_CODE_TYPE_DETAILS = "";
+        public static final String INSERT_PATIENT = "INSERT INTO patients (\n" + "    first_name, last_name, date_of_birth, gender, address, city, country, phone_number, email, \n" + "    emergency_contact_name, emergency_contact_phone, blood_type, medical_history, current_medication, \n" + "    allergies, insurance_provider, insurance_policy_number, patient_status, created_at\n" + ")\n" + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);\n";
+
+        public static final String CREATE_AND_APPOINTMENT = "INSERT INTO appointments (patient_id, appointment_date_time, reason, status, notes, is_active, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         private InsertQuery() {
         }

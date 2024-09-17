@@ -12,6 +12,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -92,18 +94,12 @@ public class Patient {
     @Column(name = "insurance_policy_number")
     private String insurancePolicyNumber;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "status", nullable = false)
-    private PatientStatus status;
-
     @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Appointment> appointments;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "patient_status")
     public PatientStatus patientStatus;
-
-    @Column(name = "is_active")
-    private Boolean is_active;
 
     @Column(name = "created_at", updatable = false)
     private Date created_at;

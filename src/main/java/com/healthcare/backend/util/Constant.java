@@ -17,4 +17,10 @@ public class Constant {
 
     public static final String AUTHORIZATION = "Authorization";
     public static final String BEARER = "Bearer ";
+
+
+
+    public static final String EMPTY_STRING = "";
+    public static final String APP_TRACE_ID = "app-trace-id";
+    public static final String ERROR = "error";
 }
