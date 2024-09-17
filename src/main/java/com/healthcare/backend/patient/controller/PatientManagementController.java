@@ -23,7 +23,9 @@ public class PatientManagementController {
     @PostMapping()
     public ResponseEntity<APIResponse> createPatient(@RequestBody Patient patient) {
         log.info("Creating patient: {}", patient);
-        return patientService.createPatient(patient);
+        ResponseEntity<APIResponse> patient1 = patientService.createPatient(patient);
+        log.info("Patient created successfully: {}", patient1);
+        return patient1;
     }
 
     public void updatePatient() {
