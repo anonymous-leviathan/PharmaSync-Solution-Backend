@@ -14,6 +14,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -100,4 +101,13 @@ public class Patient {
 
     @Enumerated(EnumType.STRING)
     public PatientStatus patientStatus;
+
+    @Column(name = "is_active")
+    private Boolean is_active;
+
+    @Column(name = "created_at", updatable = false)
+    private Date created_at;
+
+    @Column(name = "updated_at", insertable = false)
+    private Date updated_at;
 }

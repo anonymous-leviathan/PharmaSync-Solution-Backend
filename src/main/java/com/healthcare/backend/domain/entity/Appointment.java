@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @Builder
@@ -49,4 +50,13 @@ public class Appointment {
 
     @Enumerated(EnumType.STRING)
     public AppointmentStatus appointmentStatus;
+
+    @Column(name = "is_active")
+    private Boolean is_active;
+
+    @Column(name = "created_at", updatable = false)
+    private Date created_at;
+
+    @Column(name = "updated_at", insertable = false)
+    private Date updated_at;
 }

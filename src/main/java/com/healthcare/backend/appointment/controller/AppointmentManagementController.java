@@ -1,4 +1,4 @@
-package com.healthcare.backend.appointment;
+package com.healthcare.backend.appointment.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 

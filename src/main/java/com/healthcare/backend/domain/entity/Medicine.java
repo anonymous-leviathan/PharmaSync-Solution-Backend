@@ -1,4 +1,4 @@
-package com.healthcare.backend.inventory_management.domain;
+package com.healthcare.backend.domain.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
@@ -15,7 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "MEDICINE")
+@Table(name = "medicine")
 public class Medicine {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -74,7 +74,7 @@ public class Medicine {
     private BigDecimal purchasePrice;
 
     @NotBlank(message = "Storage conditions are mandatory")
-    @Lob  // Changed to TEXT
+    @Lob
     private String storageConditions;
 
     @NotNull(message = "Prescriptions required flag is mandatory")
@@ -108,4 +108,13 @@ public class Medicine {
 
     @Lob  // Changed to TEXT
     private String warnings;
+
+    @Column(name = "is_active")
+    private Boolean is_active;
+
+    @Column(name = "created_at", updatable = false)
+    private Date created_at;
+
+    @Column(name = "updated_at", insertable = false)
+    private Date updated_at;
 }
