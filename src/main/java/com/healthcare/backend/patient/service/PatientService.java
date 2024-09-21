@@ -14,5 +14,5 @@ public interface PatientService {
 
     void retrievePatient();
 
-    void retrievePatientDetails();
+    ResponseEntity<APIResponse> retrievePatientDetails();
 }

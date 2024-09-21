@@ -15,7 +15,18 @@ public class SqlQuery {
      * This holds all the select queries
      */
     public static class SelectQuery {
-        public static final String SELECT_ALL_TPS_PURPOSE = "";
+        // Query to select all patients
+        public static final String SELECT_ALL_PATIENTS =
+                "SELECT id, first_name, last_name, date_of_birth, gender, address, city, country, phone_number, email, " +
+                        "emergency_contact_name, emergency_contact_phone, blood_type, medical_history, current_medication, " +
+                        "allergies, insurance_provider, insurance_policy_number, patient_status, created_at, updated_at " +
+                        "FROM patients";
+
+        // Query to select appointments by patient ID
+        public static final String SELECT_APPOINTMENTS_BY_PATIENT_ID =
+                "SELECT id, patient_id, appointment_date_time, reason, status, notes, is_active, created_at, updated_at " +
+                        "FROM appointments WHERE patient_id = ?";
+
 
         private SelectQuery() {
         }
@@ -49,7 +60,11 @@ public class SqlQuery {
      * This holds all  delete queries
      */
     public static class DeleteQuery {
+
+        public static final String CREATE_AND_APPOINTMENT = "DELETE FROM appointments WHERE patient_id = ?";
+
         private DeleteQuery() {
+
         }
     }
 }
