@@ -28,7 +28,9 @@ public class PatientManagementController {
     public void updatePatient() {
     }
 
-    public void deletePatient() {
+    @DeleteMapping()
+    public ResponseEntity<APIResponse> deletePatient(Long patientId) {
+        return patientService.deletePatient(patientId);
     }
 
     public void retrievePatient() {

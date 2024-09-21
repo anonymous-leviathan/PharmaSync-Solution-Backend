@@ -27,6 +27,12 @@ public class SqlQuery {
                 "SELECT id, patient_id, appointment_date_time, reason, status, notes, is_active, created_at, updated_at " +
                         "FROM appointments WHERE patient_id = ?";
 
+        // Query to check if patient exists
+        public static  final String CHECK_IF_PATIENT_EXISTS = "SELECT COUNT(*) FROM patients WHERE id = ?";
+
+
+
+
 
         private SelectQuery() {
         }
@@ -39,6 +45,8 @@ public class SqlQuery {
         public static final String INSERT_PATIENT = "INSERT INTO patients (\n" + "    first_name, last_name, date_of_birth, gender, address, city, country, phone_number, email, \n" + "    emergency_contact_name, emergency_contact_phone, blood_type, medical_history, current_medication, \n" + "    allergies, insurance_provider, insurance_policy_number, patient_status, created_at\n" + ")\n" + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);\n";
 
         public static final String CREATE_AND_APPOINTMENT = "INSERT INTO appointments (patient_id, appointment_date_time, reason, status, notes, is_active, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+
+
 
         private InsertQuery() {
         }
@@ -61,7 +69,9 @@ public class SqlQuery {
      */
     public static class DeleteQuery {
 
-        public static final String CREATE_AND_APPOINTMENT = "DELETE FROM appointments WHERE patient_id = ?";
+        public static final String DELETE_APPOINTMENT = "DELETE FROM appointments WHERE patient_id = ?";
+
+        public static final String DELETE_PATIENT = "DELETE FROM patients WHERE id = ?";
 
         private DeleteQuery() {
 
