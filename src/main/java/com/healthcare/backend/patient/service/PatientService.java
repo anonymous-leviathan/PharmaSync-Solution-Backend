@@ -29,7 +29,7 @@ public interface PatientService {
      */
     ResponseEntity<APIResponse> createPatient(Patient patient);
 
-    void updatePatient();
+    ResponseEntity<APIResponse> updatePatient();
 
     /**
      * Deletes a patient and all their associated appointments from the database.
@@ -53,6 +53,7 @@ public interface PatientService {
      * </ul>
      */
     ResponseEntity<APIResponse> deletePatient(Long patientId);
+
 
     void retrievePatient();
 

@@ -110,8 +110,8 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
-    public void updatePatient() {
-
+    public ResponseEntity<APIResponse> updatePatient() {
+return null;
     }
 
     @Override
